@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: rgb(238, 238, 238);
+    min-height: 100svh;
+    max-height: auto;
+    width: 100%;
+    color: aliceblue;
+}
+
+.primary_hero {
+    height: 100vh;
+    background-color: #160734;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.primary_hero>svg {
+    font-size: 4rem;
+}
+
+.primary_hero>h3 {
+    font-family: 'DynaPuff', cursive;
+    font-size: 4.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    word-spacing: 0.5rem;
+}
+
+.primary_hero .btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContainer>.btnStarted {
+    background-color: orangered;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2.5rem;
+    width: 15rem;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnContainer>.btnLearnMore {
+    background-color: #160734;
+    border: 1px solid white;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 1rem;
+    font-size: 1.3rem;
+    width: 15rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 2.5rem 0 0 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnLearnMore:hover {
+    background-color: #ffffff;
+    color: #160734;
+    cursor: pointer;
+}
+
+.btnStarted:hover {
+    background-color: #ffffff;
+    color: orangered;
+    cursor: pointer;
+}
+
+.Loaderwrapper {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    margin: 4rem;
+}
+
+.loader {
+    width: 28px;
+    height: 44px;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid #ffffff3a;
+    margin: auto;
+    border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background: #ffffff3a;
+    border-radius: 10px;
+    animation: scrollDown 1.5s linear infinite;
+}
+
+@keyframes scrollDown {
+    0% {
+        top: 8px;
+        height: 4px;
+        opacity: 1;
+    }
+
+    33% {
+        top: 10px;
+        height: 15px;
+    }
+
+    66% {
+        top: 15px;
+        height: 15px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 25px;
+        height: 5px;
+        opacity: 0;
+    }
+}
+
+.LowerHero {
+    height: 100svh;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 3rem 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LowerHero>.heading {
+    font-size: 3rem;
+    font-family: 'DynaPuff', cursive;
+    color: #160734;
+    text-align: center;
+}
+
+.LowerHero>.para {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    color: #160734;
+    text-align: center;
+    width: 50%;
+    margin: 1.5rem 0 0 0;
+
+}
+
+.ClientsInfo {
+    height: 15vh;
+    border: 1px solid black;
+    width: 60%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ClientsInfo>.infoWrapper {
+    height: 100%;
+    width: calc(100%/3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoWrapper>.title {
+    color: #160734;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 0.5rem 0 0 0;
+}
+
+.infoWrapper>.numbers {
+    color: #160734;
+    font-size: 2rem;
+    font-family: 'DynaPuff', cursive;
+
+}
